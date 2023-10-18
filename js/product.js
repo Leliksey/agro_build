@@ -140,11 +140,11 @@ $(document).ready(function() {
         var distanceToRight = $(window).width() - (block.offset().left + block.outerWidth());
         $(".mfp-arrow-right").css("right", distanceToRight - 100 + 'px')
         var distanceToLeft = $(window).width() - (block.offset().left + block.outerWidth());
-        $(".mfp-arrow-left").css("left", distanceToLeft - 90 + 'px')
-        if ($(window).width() < 1200) {
-            var distanceToLeft = $(window).width() - (block.offset().left + block.outerWidth());
-            $(".mfp-arrow-left").css("left", distanceToLeft - 60 + 'px')
-        }
+        $(".mfp-arrow-left").css("left", distanceToLeft - 60 + 'px')
+        // if ($(window).width() < 1200) {
+        //     var distanceToLeft = $(window).width() - (block.offset().left + block.outerWidth());
+        //     $(".mfp-arrow-left").css("left", distanceToLeft - 60 + 'px')
+        // }
     }
     var imgSrc;
     if ($(window).width() > 768) {
