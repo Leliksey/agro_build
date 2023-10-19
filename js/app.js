@@ -25,8 +25,10 @@ $(document).ready(function() {
   });
   document.addEventListener('click', function(event) {
       var langBlock = document.querySelector('.lang');
-      if (!langBlock.contains(event.target)) {
-          langBlock.classList.remove('open');
+      if(langBlock) {
+        if (!langBlock.contains(event.target)) {
+            langBlock.classList.remove('open');
+        }
       }
   });
   $(document).on('click', function(event) {

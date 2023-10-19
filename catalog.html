@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/magnific_popup.css">
     <link rel="stylesheet" href="css/slick/slick.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
@@ -34,6 +34,11 @@
         <div class="container">
             <div class="catalog__content">
                 <div class="sectionTitle">к трактору</div>
+                <button type="button" class="catalog__filter-btn_mobile">фільтр
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5334 0.466496C18.0761 0.00921487 17.3428 0.00921487 16.8855 0.466496L9.49996 7.85202L2.11443 0.466496C1.65715 0.00921487 0.923777 0.00921487 0.466496 0.466496C0.00921487 0.923777 0.00921487 1.65715 0.466496 2.11443L7.85202 9.49996L0.466496 16.8855C0.00921487 17.3428 0.00921487 18.0761 0.466496 18.5334C0.690823 18.7577 0.992801 18.8785 1.28615 18.8785C1.5795 18.8785 1.88148 18.7664 2.10581 18.5334L9.49133 11.1479L16.8769 18.5334C17.1012 18.7577 17.4032 18.8785 17.6965 18.8785C17.9985 18.8785 18.2918 18.7664 18.5162 18.5334C18.9734 18.0761 18.9734 17.3428 18.5162 16.8855L11.1479 9.49996L18.5334 2.11443C18.9907 1.65715 18.9907 0.923777 18.5334 0.466496Z" fill="white"/>
+                    </svg>
+                </button>
                 <div class="catalog__box">
                     <aside class="filter catalog__filter"></aside>
                     <div class="catalog__products">
@@ -72,16 +77,30 @@
                         <div class="catalog__products-grid">
                             <div class="recommended__item">
                                 <div class="recommended__item-articul">Артикул</div>
-                                <img src="images/recommended_img.png" alt="" class="recommended__item-img">
-                                <div class="rating recommended__item-rating">
-                                    <span class="star active" data-rating="1">&#9733;</span>
-                                    <span class="star active" data-rating="2">&#9733;</span>
-                                    <span class="star active" data-rating="3">&#9733;</span>
-                                    <span class="star active" data-rating="4">&#9733;</span>
-                                    <span class="star " data-rating="5">&#9733;</span>
+                                <div class="catalog__product-item__group">
+                                    <img src="images/recommended_img.png" alt="" class="recommended__item-img">
+                                    <div class="rating recommended__item-rating">
+                                        <span class="star active" data-rating="1">&#9733;</span>
+                                        <span class="star active" data-rating="2">&#9733;</span>
+                                        <span class="star active" data-rating="3">&#9733;</span>
+                                        <span class="star active" data-rating="4">&#9733;</span>
+                                        <span class="star " data-rating="5">&#9733;</span>
+                                    </div>
                                 </div>
-                                <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
-                                <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                <div class="catalog__product-item__group">
+                                    <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
+                                    <div class="catalog__mobile-rating">
+                                        <div class="recommended__item-articul">Артикул</div>
+                                        <div class="rating recommended__item-rating">
+                                            <span class="star active" data-rating="1">&#9733;</span>
+                                            <span class="star active" data-rating="2">&#9733;</span>
+                                            <span class="star active" data-rating="3">&#9733;</span>
+                                            <span class="star active" data-rating="4">&#9733;</span>
+                                            <span class="star " data-rating="5">&#9733;</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                </div>
                                 <ul class="main__info-params recommended__main__info-params">
                                     <li class="main__info-param">
                                         <svg width="53" height="26" viewBox="0 0 53 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,16 +149,20 @@
                             </div>
                             <div class="recommended__item">
                                 <div class="recommended__item-articul">Артикул</div>
-                                <img src="images/recommended_img.png" alt="" class="recommended__item-img">
-                                <div class="rating recommended__item-rating">
-                                    <span class="star active" data-rating="1">&#9733;</span>
-                                    <span class="star active" data-rating="2">&#9733;</span>
-                                    <span class="star active" data-rating="3">&#9733;</span>
-                                    <span class="star active" data-rating="4">&#9733;</span>
-                                    <span class="star " data-rating="5">&#9733;</span>
+                                <div class="catalog__product-item__group">
+                                    <img src="images/recommended_img.png" alt="" class="recommended__item-img">
+                                    <div class="rating recommended__item-rating">
+                                        <span class="star active" data-rating="1">&#9733;</span>
+                                        <span class="star active" data-rating="2">&#9733;</span>
+                                        <span class="star active" data-rating="3">&#9733;</span>
+                                        <span class="star active" data-rating="4">&#9733;</span>
+                                        <span class="star " data-rating="5">&#9733;</span>
+                                    </div>
                                 </div>
-                                <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
-                                <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                <div class="catalog__product-item__group">
+                                    <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
+                                    <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                </div>
                                 <ul class="main__info-params recommended__main__info-params">
                                     <li class="main__info-param">
                                         <svg width="53" height="26" viewBox="0 0 53 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,16 +211,20 @@
                             </div>
                             <div class="recommended__item">
                                 <div class="recommended__item-articul">Артикул</div>
-                                <img src="images/recommended_img.png" alt="" class="recommended__item-img">
-                                <div class="rating recommended__item-rating">
-                                    <span class="star active" data-rating="1">&#9733;</span>
-                                    <span class="star active" data-rating="2">&#9733;</span>
-                                    <span class="star active" data-rating="3">&#9733;</span>
-                                    <span class="star active" data-rating="4">&#9733;</span>
-                                    <span class="star " data-rating="5">&#9733;</span>
+                                <div class="catalog__product-item__group">
+                                    <img src="images/recommended_img.png" alt="" class="recommended__item-img">
+                                    <div class="rating recommended__item-rating">
+                                        <span class="star active" data-rating="1">&#9733;</span>
+                                        <span class="star active" data-rating="2">&#9733;</span>
+                                        <span class="star active" data-rating="3">&#9733;</span>
+                                        <span class="star active" data-rating="4">&#9733;</span>
+                                        <span class="star " data-rating="5">&#9733;</span>
+                                    </div>
                                 </div>
-                                <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
-                                <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                <div class="catalog__product-item__group">
+                                    <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
+                                    <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                </div>
                                 <ul class="main__info-params recommended__main__info-params">
                                     <li class="main__info-param">
                                         <svg width="53" height="26" viewBox="0 0 53 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,16 +273,20 @@
                             </div>
                             <div class="recommended__item">
                                 <div class="recommended__item-articul">Артикул</div>
-                                <img src="images/recommended_img.png" alt="" class="recommended__item-img">
-                                <div class="rating recommended__item-rating">
-                                    <span class="star active" data-rating="1">&#9733;</span>
-                                    <span class="star active" data-rating="2">&#9733;</span>
-                                    <span class="star active" data-rating="3">&#9733;</span>
-                                    <span class="star active" data-rating="4">&#9733;</span>
-                                    <span class="star " data-rating="5">&#9733;</span>
+                                <div class="catalog__product-item__group">
+                                    <img src="images/recommended_img.png" alt="" class="recommended__item-img">
+                                    <div class="rating recommended__item-rating">
+                                        <span class="star active" data-rating="1">&#9733;</span>
+                                        <span class="star active" data-rating="2">&#9733;</span>
+                                        <span class="star active" data-rating="3">&#9733;</span>
+                                        <span class="star active" data-rating="4">&#9733;</span>
+                                        <span class="star " data-rating="5">&#9733;</span>
+                                    </div>
                                 </div>
-                                <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
-                                <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                <div class="catalog__product-item__group">
+                                    <div class="recommended__item-title">фронтальный навантажувач для трактора</div>
+                                    <div class="recommended__item-desc">Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського </div>
+                                </div>
                                 <ul class="main__info-params recommended__main__info-params">
                                     <li class="main__info-param">
                                         <svg width="53" height="26" viewBox="0 0 53 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -312,9 +343,8 @@
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
-    <!-- Magnific Popup core JS file -->
     <script src="js/magnific_popup.js"></script>
     <script defer src="js/app.js"></script>
-    <script defer src="js/product.js"></script>
+    <script defer src="js/catalog.js"></script>
 </body>
 </html>
