@@ -11,5 +11,25 @@ $(document).ready(function() {
         e.stopPropagation();
         $(".catalog__filter-btn_mobile").toggleClass("open");
         $(".filter").slideToggle();
-    })
+    });
+    var select = $("#catalog__sort");
+
+    // Создаем временный элемент для измерения ширины текста
+    var temp = $("<span>").css({ display: 'none', 'font-size': select.css('font-size') });
+    $('body').append(temp);
+
+    select.on("change", function() {
+        var selectedIndex = select.prop("selectedIndex");
+        var optionText = select.find("option:eq(" + selectedIndex + ")").text();
+
+        // Измеряем ширину текста во временном элементе
+        temp.text(optionText);
+        var optionWidth = temp.width();
+
+        // Устанавливаем ширину select, учитывая небольшой отступ
+        select.css('width', optionWidth - 30);
+    });
+
+    // Вызываем событие "change" для установки начальной ширины
+    select.trigger("change");
 })
