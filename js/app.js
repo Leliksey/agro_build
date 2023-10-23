@@ -1,13 +1,13 @@
 $(document).ready(function() {
   if ($(window).width() > 1440 ) {
       $(".menu__item").click(function() {
-          $(".menu__item").removeClass("open");
-          $(this).addClass("open");
+        //   $(".menu__item").removeClass("open");
+        //   $(this).addClass("open");
       })
   } else {
       $(".menu__item span").click(function(e) {
-              e.stopPropagation()
-              $(this).siblings(".menu__item-list").slideToggle();
+            //   e.stopPropagation()
+            //   $(this).siblings(".menu__item-list").slideToggle();
       })
   }
   
@@ -15,7 +15,7 @@ $(document).ready(function() {
       if($(e.target).hasClass("lang__list")){
           return;
       } else {
-          $(this).toggleClass("open");
+        //   $(this).toggleClass("open");
       }
   })
   $(".lang__item").click(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
       var langBlock = document.querySelector('.lang');
       if(langBlock) {
         if (!langBlock.contains(event.target)) {
-            langBlock.classList.remove('open');
+            // langBlock.classList.remove('open');
         }
       }
   });
@@ -39,6 +39,7 @@ $(document).ready(function() {
           && !$(event.target).hasClass('search__btn') && !$(event.target).hasClass('search__modal')) {
           // Клик сделан вне элемента с классом "search" и не на .search__btn и .search__modal
           searchBlock.removeClass('open');
+          $(".search__modal").removeClass('d__flex')
       }
   });
   
@@ -54,6 +55,20 @@ $(document).ready(function() {
           menuBlock.removeClass('open');
       }
   });
+  $(".search").on("mouseover", function () {
+    $(".search__modal").show();
+  });
+  
+  $(".search").on("mouseleave", function () {
+    function delayHide() {
+        $(".search__modal").hide()
+      }
+      setTimeout(delayHide, 300)
+  });
+  $(".search").click(function() {
+    $(".search__modal").addClass('d__flex')
+  })
+
   $(document).on('click', function(event) {
       var loginBlock = $('.login');
   

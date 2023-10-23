@@ -517,7 +517,7 @@ select::-ms-expand {
     top: 0;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 992px) {
   .header {
     padding: 10px 0;
   }
@@ -782,12 +782,13 @@ select::-ms-expand {
   }
 }
 .menu__item.open > * {
-  color: #1e98ff;
+  /* color: #1e98ff; */
 }
 .menu__item.open > * path {
-  fill: #1e98ff;
+  /* fill: #1e98ff; */
 }
-.menu__item.open .menu__item-list {
+/* .menu__item.open .menu__item-list  */
+.menu__item:hover .menu__item-list {
   display: block;
 }
 .menu__item-list {
@@ -1315,6 +1316,9 @@ select::-ms-expand {
 .search > svg:hover path {
   fill: #1e98ff;
 }
+.search:hover .search__modal {
+  /* display: flex; */
+}
 .search.open .search__modal {
   display: flex;
 }
@@ -1386,7 +1390,12 @@ select::-ms-expand {
   letter-spacing: 0.02em;
   color: #fff;
 }
-
+.search__modal:hover {
+  display: flex !important; 
+}
+.search__modal[style*="display: block"] {
+  display: flex !important;
+}
 .lang {
   padding-right: 15px;
   display: flex;
@@ -1394,8 +1403,11 @@ select::-ms-expand {
   column-gap: 10px;
   cursor: pointer;
   position: relative;
+  height: 65px;
 }
-.lang.open > svg path {
+m
+/* .lang.open > svg path, */
+.lang:hover > svg path {
   fill: #1e98ff;
 }
 .lang.arrow::after {
@@ -1407,38 +1419,54 @@ select::-ms-expand {
   background-repeat: no-repeat;
   display: block;
 }
+.lang__list {
+  display: none;
+}
 .lang__current {
   width: 25px;
   height: 25px;
   object-fit: cover;
 }
-.lang.open .lang__list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+/* .lang.open .lang__list, */
+.lang:hover .lang__list {
+  
 }
 @media (max-width: 768px) {
-  .lang.open .lang__list {
+  /* .lang.open .lang__list, */
+  .lang:hover .lang__list {
     border: 1px solid #fff;
     z-index: 5;
   }
 }
-.lang__list {
-  display: none;
+.lang:hover .lang__list {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  top: 100%;
   left: -30px;
-  top: 45px;
   background-color: #313e45;
-  padding: 15px 35px;
-  row-gap: 15px;
+  width: 150%;
 }
 @media (max-width: 768px) {
   .lang__list {
-    padding: 15px 18px;
     right: 15px;
   }
 }
-
+.lang__item {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #313e45;
+}
+.lang__item:hover {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #EA9311E5;
+}
+.lang__item img {
+  max-width: 20px;
+}
 .burger {
   margin-left: 15px;
   display: none;
