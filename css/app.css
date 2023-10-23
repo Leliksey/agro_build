@@ -902,12 +902,18 @@ select::-ms-expand {
   cursor: pointer;
   position: relative;
 }
+.login.open > svg path {
+  fill: #1e98ff;
+}
 .login:hover > svg path {
   fill: #1e98ff;
 }
 .login.open .login__modal {
-  display: block;
+  display: block !important;
 }
+/* .login:hover .login__modal {
+  display: block;
+} */
 @media (max-width: 576px) {
   .login > svg {
     width: 22px;
@@ -934,6 +940,9 @@ select::-ms-expand {
     margin: auto;
     width: max-content;
   }
+}
+.login__modal:hover {
+  display: block !important;
 }
 .login__modal-title {
   font-size: 22px;
@@ -1128,8 +1137,14 @@ select::-ms-expand {
 .cart:hover path {
   fill: #1e98ff;
 }
+.cart.open path {
+  fill: #1e98ff;
+}
 .cart.open .cart__modal {
-  display: block;
+  display: block !important;
+}
+.cart:hover .cart__modal {
+  /* display: block; */
 }
 @media (max-width: 576px) {
   .cart > svg {
@@ -1166,6 +1181,9 @@ select::-ms-expand {
   .cart__modal {
     top: 49px;
   }
+}
+.cart__modal:hover {
+  display: block !important;
 }
 .cart__item {
   display: flex;
@@ -1312,6 +1330,9 @@ select::-ms-expand {
   .search > svg {
     display: none;
   }
+}
+.search.open > svg path {
+  fill: #1e98ff;
 }
 .search > svg:hover path {
   fill: #1e98ff;
