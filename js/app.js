@@ -120,7 +120,10 @@ $(document).ready(function() {
           freeDrag:false,
           URLhashListener:false,
           dots:false,
-          autoplay:false,
+          autoplay: true,
+          slideTransition: 'linear',
+          autoplaySpeed: 5000,
+          autoplayTimeout: 5000,
           margin:20,
           responsive:{
               0:{
