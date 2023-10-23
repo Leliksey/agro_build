@@ -169,4 +169,29 @@ $(document).ready(function() {
     $(".product__preview-media .tehno__media-btn").click(function(e) {
         e.stopPropagation()
     })
+
+    $(".productPage__reviews-footer .customLink").click(function() {
+        $(".overlay").show();
+        $(".productPage__addReview").show();
+    })
+    $(".overlay").click(function() {
+        $(this).hide();
+        $(".close__addReview").click();
+      })
+      $(".close__addReview").click(function() {
+        $(this).parent().hide();
+        $(".overlay").hide();
+      });
+      $(".productPage__addReview > .customLink").click(function() {
+        $(".productPage__addReview-title").hide();
+        $(".productPage__addReview-rating").hide();
+        $(".productPage__addReview textarea").hide();
+        $(".productPage__addReview button.customLink").hide();
+        $(".productPage__addReview-title__complete").show();
+        $(".productPage__addReview-main__link").show();
+      });
+      $(".productPage__addReview-login .customLink").click(function() {
+        $(".close__addReview").click();
+        $(".login__modal").show();
+      });
 });

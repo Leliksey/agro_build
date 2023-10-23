@@ -154,7 +154,10 @@ $(document).ready(function() {
                   freeDrag:false,
                   URLhashListener:false,
                   dots:false,
-                  autoplay:false,
+                  autoplay: true,
+                  slideTransition: 'linear',
+                  autoplaySpeed: 5000,
+                  autoplayTimeout: 5000,
                   margin:20,
                   responsive:{
                       0:{
@@ -180,7 +183,10 @@ $(document).ready(function() {
           freeDrag:false,
           URLhashListener:false,
           dots:false,
-          autoplay:false,
+          autoplay: true,
+          slideTransition: 'linear',
+          autoplaySpeed: 5000,
+          autoplayTimeout: 5000,
           margin:20,
           responsive:{
               0:{
@@ -267,7 +273,10 @@ $(document).ready(function() {
                   freeDrag:false,
                   URLhashListener:false,
                   dots:false,
-                  autoplay:false,
+                  autoplay: true,
+                  slideTransition: 'linear',
+                  autoplaySpeed: 5000,
+                  autoplayTimeout: 5000,
                   margin:20,
                   responsive:{
                       0:{
@@ -296,7 +305,10 @@ $(document).ready(function() {
           freeDrag:false,
           URLhashListener:false,
           dots:false,
-          autoplay:false,
+          autoplay: true,
+          slideTransition: 'linear',
+          autoplaySpeed: 5000,
+          autoplayTimeout: 5000,
           items:5,
           margin:30,
           responsive:{
@@ -359,7 +371,10 @@ $(document).ready(function() {
           freeDrag:false,
           URLhashListener:false,
           dots:true,
-          autoplay:false,
+          autoplay: true,
+          slideTransition: 'linear',
+          autoplaySpeed: 5000,
+          autoplayTimeout: 5000,
           margin:30,
           responsive:{
               0:{
@@ -401,38 +416,38 @@ $(document).ready(function() {
         });
 
 
-      //   $('.rating').each(function() {
-      //     var $rating = $(this);
-      //     var ratingValueId = $rating.attr('id') + '-value';
-      //     var rating = 0;
+        $('.productPage__addReview-rating').each(function() {
+          var $rating = $(this);
+          var ratingValueId = $rating.attr('id') + '-value';
+          var rating = 0;
     
-      //     $rating.find('.star').on('click', function() {
-      //       var selectedRating = $(this).data('rating');
-      //       $rating.find('.star').removeClass('active');
+          $rating.find('.star').on('click', function() {
+            var selectedRating = $(this).data('rating');
+            $rating.find('.star').removeClass('active');
     
-      //       for (var i = 1; i <= selectedRating; i++) {
-      //         $rating.find('.star[data-rating="' + i + '"]').addClass('active');
-      //       }
+            for (var i = 1; i <= selectedRating; i++) {
+              $rating.find('.star[data-rating="' + i + '"]').addClass('active');
+            }
     
-      //       rating = selectedRating;
-      //       $('#' + ratingValueId).html('Вы поставили оценку: ' + rating);
-      //     });
+            rating = selectedRating;
+            $('#' + ratingValueId).html('Вы поставили оценку: ' + rating);
+          });
     
-      //     $rating.find('.star').hover(function() {
-      //       var selectedRating = $(this).data('rating');
-      //       $rating.find('.star').removeClass('active');
+          $rating.find('.star').hover(function() {
+            var selectedRating = $(this).data('rating');
+            $rating.find('.star').removeClass('active');
     
-      //       for (var i = 1; i <= selectedRating; i++) {
-      //         $rating.find('.star[data-rating="' + i + '"]').addClass('active');
-      //       }
-      //     }, function() {
-      //       $rating.find('.star').removeClass('active');
+            for (var i = 1; i <= selectedRating; i++) {
+              $rating.find('.star[data-rating="' + i + '"]').addClass('active');
+            }
+          }, function() {
+            $rating.find('.star').removeClass('active');
     
-      //       for (var i = 1; i <= rating; i++) {
-      //         $rating.find('.star[data-rating="' + i + '"]').addClass('active');
-      //       }
-      //     });
-      //   });
+            for (var i = 1; i <= rating; i++) {
+              $rating.find('.star[data-rating="' + i + '"]').addClass('active');
+            }
+          });
+        });
 
       $(".burger__icon svg:first-child").on("click", function(e) {
           e.stopPropagation();

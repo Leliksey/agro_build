@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="container">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
@@ -319,6 +320,39 @@
         </div>
     </div>
     <div class="productPage__reviews" id="aboutProduct__rev">
+        <div class="productPage__addReview">
+            <div class="productPage__addReview-title sectionTitle">залишити відгук</div>
+            <div class="productPage__addReview-title productPage__addReview-title__complete sectionTitle">дякуємо вам за відгук</div>
+            <div class="productPage__addReview-title productPage__addReview-title__complete productPage__addReview-title__complete_blue">ваша думка дуже важлива для нас</div>
+            <a href="/" class="productPage__addReview-main__link">На головну</a>
+            <div class="productPage__addReview-rating rating">
+                <span class="star active" data-rating="1">&#9733;</span>
+                <span class="star active" data-rating="2">&#9733;</span>
+                <span class="star active" data-rating="3">&#9733;</span>
+                <span class="star active" data-rating="4">&#9733;</span>
+                <span class="star " data-rating="5">&#9733;</span>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш коментар"></textarea>
+            <div class="productPage__addReview-login">
+                <span>авторизуйтеся, щоб залишити відгук
+                </span>
+                <a href="#" class="customLink">
+                    <span>авторизуватися</span>
+                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z" fill="white"></path>
+                    </svg>
+                </a>
+            </div>
+            <button class="customLink">
+                <span>відправити</span>
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z" fill="white"></path>
+                </svg>
+            </button>
+            <svg class="close__addReview" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.104 0.39315C20.5798 -0.13105 19.7391 -0.13105 19.2149 0.39315L10.7486 8.85948L2.28225 0.39315C1.75805 -0.13105 0.917351 -0.13105 0.39315 0.39315C-0.13105 0.917351 -0.13105 1.75805 0.39315 2.28225L8.85948 10.7486L0.39315 19.2149C-0.13105 19.7391 -0.13105 20.5798 0.39315 21.104C0.650305 21.3612 0.996475 21.4996 1.33275 21.4996C1.66903 21.4996 2.0152 21.3711 2.27236 21.104L10.7387 12.6377L19.205 21.104C19.4622 21.3612 19.8083 21.4996 20.1446 21.4996C20.4908 21.4996 20.8271 21.3711 21.0842 21.104C21.6084 20.5798 21.6084 19.7391 21.0842 19.2149L12.6377 10.7486L21.104 2.28225C21.6282 1.75805 21.6282 0.917351 21.104 0.39315Z" fill="white"/>
+            </svg>
+        </div>
         <div class="container3">
             <div class="sectionTitle sectionTitle_white">відгуки</div>
             <div class="productPage__reviews-grid">
@@ -444,12 +478,12 @@
                         </svg>
                     </button>
                 </div>
-                <a href="#" class="customLink customLink_black">
+                <button class="customLink customLink_black" type="button">
                     <span>залишити відгук</span>
                     <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z" fill="white"></path>
                     </svg>
-                </a>
+                </button>
             </div>
         </div>
     </div> 
