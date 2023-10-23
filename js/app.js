@@ -455,10 +455,12 @@ $(document).ready(function() {
 
           // При скролле страницы, проверяем, когда показывать/скрывать кнопку
           window.onscroll = function() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
               scrollTopButton.style.display = "block";
+              $(".header").addClass('fixed');
           } else {
               scrollTopButton.style.display = "none";
+              $(".header").removeClass('fixed');
           }
           };
 
