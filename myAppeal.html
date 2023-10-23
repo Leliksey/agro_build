@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Агроформат</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/myAppeal.css">
+</head>
+<body>
+  <main>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__block">
+          <a href="#" class="nav__block-item">Головна /</a>
+          <span class="nav__block-item nav__block-item__current">Мої звернення</span>
+        </div>
+      </div>
+    </nav>
+    <section class="account">
+      <div class="container">
+        <h1 class="account__title">Мої звернення</h1>
+        <div class="account__block">
+          <nav class="account__block-nav">
+            <h2 class="account__block-nav__name">Вітаємо, Олександре</h2>
+            <a href="#" class="account__block-nav__item">
+              <img src="img/checkout.svg" alt="checkout-icon">
+              Мої замовлення
+            </a>
+            <div class="account__block-nav__item account__block-nav__item-current">
+              <img src="img/comment.svg" alt="comment-icon">
+              Мої звернення
+            </div>
+            <a href="#" class="account__block-nav__item">
+              <img src="img/settings.svg" alt="settings-icon">
+              Налаштування
+            </a>
+            <div class="account__block-nav__item">
+              <img src="img/logout.svg" alt="logout-icon">
+              Вийти з кабінету
+            </div>
+          </nav>
+          <div class="account__block-content">
+            <h2 class="account__block-nav__name-hidden">Вітаємо, Олександре</h2>
+            <a href="#" class="account__block-nav__item-hidden">
+              <img src="img/checkout.svg" alt="checkout-icon">
+              Мої замовлення
+              <img src="img/arrow-down.svg" alt="arrow" class="account__block-nav__item-hidden__arrow">
+            </a>
+            <div class="account__block-nav__item-hidden account__block-nav__item-current__hidden">
+              <img src="img/comment.svg" alt="comment-icon">
+              Мої звернення
+              <img src="img/arrow-down.svg" alt="arrow" class="account__block-nav__item-hidden__arrow">
+            </div>
+            <section class="account__section myAppeal">
+              <div class="myAppeal__item">
+                <div class="myAppeal__header">
+                  <div class="myAppeal__header-info">
+                    <div class="myAppeal__header-info__text">
+                      <div class="myAppeal__header-info__text-left">
+                        <span class="myAppeal__header-number">№ 44</span>
+                        <span class="myAppeal__header-date">Від 24.22.23</span>
+                      </div>
+                      <span class="myAppeal__header-status myAppeal__header-status__done">Вирішено</span>
+                    </div>
+                    <div class="myAppeal__header-top">
+                        <div class="myAppeal__header-top__title">
+                          <span>НАЗВА ТОВАРУ:</span>
+                          <strong>ПРИЧІП ТРАКТОРНИЙ САМОСКИДНИЙ 2ПТС-4</strong>
+                        </div>
+                        <div class="myAppeal__header-top__reason">
+                          <span>ПРИЧИНА ЗВЕРНЕННЯ:</span>
+                          <strong>ГАРАНТІЙНИЙ ВИПАДОК</strong>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="myAppeal__header-block">
+                    <div class="myAppeal__header-block__image">
+                      <img src="img/product-appeal.png" alt="product-image">
+                    </div>
+                    <div class="myAppeal__header-block__right">
+                      <div class="myAppeal__header-answer">
+                        <div class="myAppeal__header-answer__title">
+                          <img src="img/answer.png" alt="answer-icon">
+                          <h2>Відповідь <span>Технічного спеціаліста</span> <span class="myAppeal__header-answer__hidden">Тех.спеціаліста</span></h2>
+                        </div>
+                        <p class="myAppeal__header-answer__description">
+                          Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару.
+                        </p>
+                      </div>
+                      <div class="myAppeal__details">
+                        <div class="myAppeal__details-block">
+                          <div class="myAppeal__details-block__item">
+                            <span>Деталі замовлення: </span>
+                            <div class="myAppeal__details-block__item-wrapper">
+                              <strong>№ 564578</strong>
+                              <strong>Від 24.22.23</strong>
+                            </div>
+                          </div>
+                          <button class="myAppeal__details-edit"><img src="img/edit.png" alt="edit-icon">редагувати </button>
+                          <button class="myAppeal__details-save"><img src="img/save.png" alt="save-icon">зберегти </button>
+                      </div>
+                        <div class="myAppeal__details-contacts">
+                          <div class="myAppeal__details-contacts__name myAppeal__details-contacts__item">
+                            <span>Отримувач:</span>
+                            <strong>ТОВ “Фермер” Романов Олександр Іванович</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__data myAppeal__details-contacts__item">
+                            <span>Контактні дані:</span>
+                            <strong>+380559999433</strong>
+                            <strong>agro@gmai.com</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__delivery myAppeal__details-contacts__item">
+                            <span>Спосіб доставки:</span>
+                            <strong>Курьєр “Нова пошта”</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__address myAppeal__details-contacts__item">
+                            <span>Адреса доставки:</span>
+                            <strong>Запорізька обл. , м. Запоріжжя , пр. Соборний 222</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__date myAppeal__details-contacts__item">
+                            <span>Дата доставки:</span>
+                            <strong>14.02.23</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__payment myAppeal__details-contacts__item">
+                            <span>Спосіб оплати:</span>
+                            <strong>Безготівковий розрахунок</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__note myAppeal__details-contacts__item">
+                            <span>Примітки:</span>
+                            <strong>Зателефонувати перед доставкою</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="myAppeal__description-update">
+                        <h3>Детальний опис звернення</h3>
+                        <p>
+                          Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського господарства. Постійне вдосконалення технологічних підходів в обробітку грунту та посіву, а також пошук нових методів рішень – це один із способів бути кращим у своїй справі від інших.Жодна галузь не має межі Тим більше це стосується сільського господарства. Постійне вдосконалення технологічних підходів в обробітку грунту та посіву, а також пошук нових методів рішень – це один із способів бути кращим у своїй справі від інших.Жодна галузь не має межі
+                        </p>
+                      </div>
+                      <div class="myAppeal__files">
+                        <div class="myAppeal__files-text">
+                          <span>Прикріплені файли:</span>
+                          <button class="myAppeal__files-download"><img src="img/loading.png" alt="loading-icon">завантажити</button>
+                        </div>
+                        <div class="myAppeal__files-block">
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>photo111.jpeg</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="myAppeal__answer-update">
+                        <div class="myAppeal__answer-update__title">
+                          <img src="img/answer.png" alt="answer-icon">
+                          <h2>Відповідь <span>Технічного спеціаліста</span></h2>
+                        </div>
+                        <p class="myAppeal__answer-update__description">
+                          Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару.
+                        </p>
+                        <div class="myAppeal__answer-update__file">
+                          <img src="img/pdf-icon.png" alt="pdf-icon">
+                          <span>накладна.pdf</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="myAppeal__header-arrow"><img src="img/arrow-down.svg" alt="arrow"></div>
+                </div>
+              </div>
+              <div class="myAppeal__item">
+                <div class="myAppeal__header">
+                  <div class="myAppeal__header-info">
+                    <div class="myAppeal__header-info__text">
+                      <div class="myAppeal__header-info__text-left">
+                        <span class="myAppeal__header-number">№ 44</span>
+                        <span class="myAppeal__header-date">Від 24.22.23</span>
+                      </div>
+                      <span class="myAppeal__header-status myAppeal__header-status__inProcess">в обробці</span>
+                    </div>
+                    <div class="myAppeal__header-top">
+                        <div class="myAppeal__header-top__title">
+                          <span>НАЗВА ТОВАРУ:</span>
+                          <strong>ПРИЧІП ТРАКТОРНИЙ САМОСКИДНИЙ 2ПТС-4</strong>
+                        </div>
+                        <div class="myAppeal__header-top__reason">
+                          <span>ПРИЧИНА ЗВЕРНЕННЯ:</span>
+                          <strong>ГАРАНТІЙНИЙ ВИПАДОК</strong>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="myAppeal__header-block">
+                    <div class="myAppeal__header-block__image">
+                      <img src="img/product-appeal.png" alt="product-image">
+                    </div>
+                    <div class="myAppeal__header-block__right">
+                      <div class="myAppeal__header-description">
+                        <h2 class="myAppeal__header-description__title">Детальний опис звернення</h2>
+                        <p class="myAppeal__header-description__subtitle">
+                          Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару.
+                        </p>
+                      </div>
+                      <div class="myAppeal__details">
+                        <div class="myAppeal__details-block">
+                          <div class="myAppeal__details-block__item">
+                            <span>Деталі замовлення: </span>
+                            <div class="myAppeal__details-block__item-wrapper">
+                              <strong>№ 564578</strong>
+                              <strong>Від 24.22.23</strong>
+                            </div>
+                          </div>
+                          <button class="myAppeal__details-edit"><img src="img/edit.png" alt="edit-icon">редагувати </button>
+                          <button class="myAppeal__details-save"><img src="img/save.png" alt="save-icon">зберегти </button>
+                      </div>
+                        <div class="myAppeal__details-contacts">
+                          <div class="myAppeal__details-contacts__name myAppeal__details-contacts__item">
+                            <span>Отримувач:</span>
+                            <strong>ТОВ “Фермер” Романов Олександр Іванович</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__data myAppeal__details-contacts__item">
+                            <span>Контактні дані:</span>
+                            <strong>+380559999433</strong>
+                            <strong>agro@gmai.com</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__delivery myAppeal__details-contacts__item">
+                            <span>Спосіб доставки:</span>
+                            <strong>Курьєр “Нова пошта”</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__address myAppeal__details-contacts__item">
+                            <span>Адреса доставки:</span>
+                            <strong>Запорізька обл. , м. Запоріжжя , пр. Соборний 222</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__date myAppeal__details-contacts__item">
+                            <span>Дата доставки:</span>
+                            <strong>14.02.23</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__payment myAppeal__details-contacts__item">
+                            <span>Спосіб оплати:</span>
+                            <strong>Безготівковий розрахунок</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__note myAppeal__details-contacts__item">
+                            <span>Примітки:</span>
+                            <strong>Зателефонувати перед доставкою</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="myAppeal__description-update">
+                        <h3>Детальний опис звернення</h3>
+                        <p>
+                          Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського господарства. Постійне вдосконалення технологічних підходів в обробітку грунту та посіву, а також пошук нових методів рішень – це один із способів бути кращим у своїй справі від інших.Жодна галузь не має межі Тим більше це стосується сільського господарства. Постійне вдосконалення технологічних підходів в обробітку грунту та посіву, а також пошук нових методів рішень – це один із способів бути кращим у своїй справі від інших.Жодна галузь не має межі
+                        </p>
+                      </div>
+                      <div class="myAppeal__files">
+                        <div class="myAppeal__files-text">
+                          <span>Прикріплені файли:</span>
+                          <button class="myAppeal__files-download"><img src="img/loading.png" alt="loading-icon">завантажити</button>
+                        </div>
+                        <div class="myAppeal__files-block">
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>photo111.jpeg</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="myAppeal__header-arrow"><img src="img/arrow-down.svg" alt="arrow"></div>
+                </div>
+              </div>
+              <div class="myAppeal__item">
+                <div class="myAppeal__header">
+                  <div class="myAppeal__header-info">
+                    <div class="myAppeal__header-info__text">
+                      <div class="myAppeal__header-info__text-left">
+                        <span class="myAppeal__header-number">№ 44</span>
+                        <span class="myAppeal__header-date">Від 24.22.23</span>
+                      </div>
+                      <span class="myAppeal__header-status myAppeal__header-status__inProcess">в обробці</span>
+                    </div>
+                    <div class="myAppeal__header-top">
+                        <div class="myAppeal__header-top__title">
+                          <span>НАЗВА ТОВАРУ:</span>
+                          <strong>ПРИЧІП ТРАКТОРНИЙ САМОСКИДНИЙ 2ПТС-4</strong>
+                        </div>
+                        <div class="myAppeal__header-top__reason">
+                          <span>ПРИЧИНА ЗВЕРНЕННЯ:</span>
+                          <strong>ГАРАНТІЙНИЙ ВИПАДОК</strong>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="myAppeal__header-block">
+                    <div class="myAppeal__header-block__image">
+                      <img src="img/product-appeal.png" alt="product-image">
+                    </div>
+                    <div class="myAppeal__header-block__right">
+                      <div class="myAppeal__header-description">
+                        <h2 class="myAppeal__header-description__title">Детальний опис звернення</h2>
+                        <p class="myAppeal__header-description__subtitle">
+                          Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару. Ми розглянули ваше звернення щодо гарнтійного випадку та виконаємо ремонт товару.
+                        </p>
+                      </div>
+                      <div class="myAppeal__details">
+                        <div class="myAppeal__details-block">
+                          <div class="myAppeal__details-block__item">
+                            <span>Деталі замовлення: </span>
+                            <div class="myAppeal__details-block__item-wrapper">
+                              <strong>№ 564578</strong>
+                              <strong>Від 24.22.23</strong>
+                            </div>
+                          </div>
+                          <button class="myAppeal__details-edit"><img src="img/edit.png" alt="edit-icon">редагувати </button>
+                          <button class="myAppeal__details-save"><img src="img/save.png" alt="save-icon">зберегти </button>
+                      </div>
+                        <div class="myAppeal__details-contacts">
+                          <div class="myAppeal__details-contacts__name myAppeal__details-contacts__item">
+                            <span>Отримувач:</span>
+                            <strong>ТОВ “Фермер” Романов Олександр Іванович</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__data myAppeal__details-contacts__item">
+                            <span>Контактні дані:</span>
+                            <strong>+380559999433</strong>
+                            <strong>agro@gmai.com</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__delivery myAppeal__details-contacts__item">
+                            <span>Спосіб доставки:</span>
+                            <strong>Курьєр “Нова пошта”</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__address myAppeal__details-contacts__item">
+                            <span>Адреса доставки:</span>
+                            <strong>Запорізька обл. , м. Запоріжжя , пр. Соборний 222</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__date myAppeal__details-contacts__item">
+                            <span>Дата доставки:</span>
+                            <strong>14.02.23</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__payment myAppeal__details-contacts__item">
+                            <span>Спосіб оплати:</span>
+                            <strong>Безготівковий розрахунок</strong>
+                          </div>
+                          <div class="myAppeal__details-contacts__note myAppeal__details-contacts__item">
+                            <span>Примітки:</span>
+                            <strong>Зателефонувати перед доставкою</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="myAppeal__description-update">
+                        <h3>Детальний опис звернення</h3>
+                        <p>
+                          Жодна галузь не має межі вдосконалння. Тим більше це стосується сільського господарства. Постійне вдосконалення технологічних підходів в обробітку грунту та посіву, а також пошук нових методів рішень – це один із способів бути кращим у своїй справі від інших.Жодна галузь не має межі Тим більше це стосується сільського господарства. Постійне вдосконалення технологічних підходів в обробітку грунту та посіву, а також пошук нових методів рішень – це один із способів бути кращим у своїй справі від інших.Жодна галузь не має межі
+                        </p>
+                      </div>
+                      <div class="myAppeal__files">
+                        <div class="myAppeal__files-text">
+                          <span>Прикріплені файли:</span>
+                          <button class="myAppeal__files-download"><img src="img/loading.png" alt="loading-icon">завантажити</button>
+                        </div>
+                        <div class="myAppeal__files-block">
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>photo111.jpeg</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/video-icon.png" alt="video-icon">
+                            <span>video111.mp4</span>
+                          </div>
+                          <div class="myAppeal__files-block__item">
+                            <img src="img/pdf-icon.png" alt="pdf-icon">
+                            <span>накладна.pdf</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="myAppeal__header-arrow"><img src="img/arrow-down.svg" alt="arrow"></div>
+                </div>
+              </div>
+            </section>
+            <a href="#" class="account__block-nav__item-hidden">
+              <img src="img/settings.svg" alt="settings-icon">
+              Налаштування
+              <img src="img/arrow-down.svg" alt="arrow" class="account__block-nav__item-hidden__arrow">
+            </a>
+            <div class="account__block-nav__item-hidden">
+              <img src="img/logout.svg" alt="logout-icon">
+              Вийти з кабінету
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/myAppeal.js"></script>
+</body>
+</html>

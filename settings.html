@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Агроформат</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+  <main>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__block">
+          <a href="#" class="nav__block-item">Головна /</a>
+          <span class="nav__block-item nav__block-item__current">Налаштування</span>
+        </div>
+      </div>
+    </nav>
+    <section class="account">
+      <div class="container">
+        <h1 class="account__title">Налаштування</h1>
+        <div class="account__block">
+          <nav class="account__block-nav">
+            <h2 class="account__block-nav__name">Вітаємо, Олександре</h2>
+            <a href="#" class="account__block-nav__item">
+              <img src="img/checkout.svg" alt="checkout-icon">
+              Мої замовлення
+            </a>
+            <a href="#" class="account__block-nav__item">
+              <img src="img/comment.svg" alt="comment-icon">
+              Мої звернення
+            </a>
+            <div class="account__block-nav__item account__block-nav__item-current">
+              <img src="img/settings.svg" alt="settings-icon">
+              Налаштування
+            </div>
+            <div class="account__block-nav__item">
+              <img src="img/logout.svg" alt="logout-icon">
+              Вийти з кабінету
+            </div>
+          </nav>
+          <div class="account__block-content">
+            <h2 class="account__block-nav__name-hidden">Вітаємо, Олександре</h2>
+            <a href="#" class="account__block-nav__item-hidden">
+              <img src="img/checkout.svg" alt="checkout-icon">
+              Мої замовлення
+              <img src="img/arrow-down.svg" alt="arrow" class="account__block-nav__item-hidden__arrow">
+            </a>
+            <a href="#" class="account__block-nav__item-hidden">
+              <img src="img/comment.svg" alt="comment-icon">
+              Мої звернення
+              <img src="img/arrow-down.svg" alt="arrow" class="account__block-nav__item-hidden__arrow">
+            </a>
+            <a href="#" class="account__block-nav__item-hidden account__block-nav__item-current__hidden">
+              <img src="img/settings.svg" alt="settings-icon">
+              Налаштування
+              <img src="img/arrow-down.svg" alt="arrow" class="account__block-nav__item-hidden__arrow">
+            </a>
+            <section class="account__section settings">
+              <form action="" class="settings__form">
+                <div class="settings__block">
+                  <div class="settings__block-item">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" placeholder="Ім'я" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="surname">Прізвище</label>
+                    <input type="text" id="surname" placeholder="Прізвище" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="middlename">По батькові</label>
+                    <input type="text" id="middlename" placeholder="По батькові" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="city">Ваш населений пункт</label>
+                    <input type="text" id="city" placeholder="Ваш населений пункт" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Email" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="phone" placeholder="Телефон" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="company">Компанія</label>
+                    <input type="text" id="company" placeholder="Компанія" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="code">ЄДРПОУ (ІПН)</label>
+                    <input type="text" id="code" placeholder="Код ЄДРПОУ (ІПН)" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item settings__block-item__passwordRepeat">
+                    <label for="passwordRepeat">Пароль ще раз</label>
+                    <input type="password" id="passwordRepeat" placeholder="Пароль ще раз" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                  <div class="settings__block-item">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Пароль" disabled>
+                    <img src="img/edit-input.png" alt="edit-icon">
+                  </div>
+                </div>
+                <button class="settings__edit"><img src="img/edit-settings.png" alt="edit-icon"> редагувати</button>
+                <button class="settings__save"><img src="img/save.png" alt="save-icon"> зберегти</button>
+              </form>
+            </section>
+            <div class="account__block-nav__item-hidden">
+              <img src="img/logout.svg" alt="logout-icon">
+              Вийти з кабінету
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/settings.js"></script>
+</body>
+</html>

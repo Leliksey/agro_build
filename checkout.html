@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Агроформат</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+  <main>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__block">
+          <a href="#" class="nav__block-item">Головна /</a>
+          <span class="nav__block-item nav__block-item__current">Оформити замовлення</span>
+        </div>
+      </div>
+    </nav>
+    <section class="checkout">
+      <div class="container">
+        <h1 class="checkout__title">Оформити замовлення</h1>
+        <div class="checkout__block">
+          <div class="checkout__main">
+            <div class="checkout__main-item checkout__main-contacts">
+              <h2 class="checkout__main-title checkout__main-contacts__title">КОнтактні дані</h2>
+              <div class="checkout__main-contacts__block">
+                <div class="checkout__main-contacts__wrapper">
+                  <input type="radio" id="individual" checked>
+                  <label for="individual" class="checkout__main-label__active">Фіз.особа</label>
+                </div>
+                <div class="checkout__main-contacts__wrapper">
+                  <input type="radio" id="legal">
+                  <label for="legal">Юр.особа <span class="legal__hidden">(ФОП)</span></label>
+                </div>
+              </div>
+              <div class="checkout__main-individual">
+                <input type="text" class="checkout__main-individual__input" id="individualSurname" placeholder="Прізвище">
+                <input type="text" class="checkout__main-individual__input" id="individualName" placeholder="Ім'я">
+                <input type="text" class="checkout__main-individual__input" id="individualMiddlename" placeholder="По батькові">
+                <input type="text" class="checkout__main-individual__input" id="individualPhone" placeholder="Номер телефону">
+                <input type="text" class="checkout__main-individual__input" id="individualEmail" placeholder="Email">
+                <input type="text" class="checkout__main-individual__input" id="individualAddress" placeholder="Ваша адреса">
+              </div>
+              <div class="checkout__main-legal">
+                <input type="text" class="checkout__main-legal__input" id="legalSurname" placeholder="Прізвище">
+                <input type="text" class="checkout__main-legal__input" id="legalName" placeholder="Ім'я">
+                <input type="text" class="checkout__main-legal__input" id="legalMiddlename" placeholder="По батькові">
+                <input type="text" class="checkout__main-legal__input" id="legalPhone" placeholder="Номер телефону">
+                <input type="text" class="checkout__main-legal__input" id="legalEmail" placeholder="Email">
+                <input type="text" class="checkout__main-legal__input" id="legalAddress" placeholder="Адреса компанії">
+                <input type="text" class="checkout__main-legal__input" id="legalNameCompany" placeholder="Назва компанії">
+                <input type="text" class="checkout__main-legal__input" id="legalCode" placeholder="Код ЄДРПОУ (або ІПН)">
+              </div>
+            </div>
+            <div class="checkout__main-item checkout__main-delivery">
+              <h2 class="checkout__main-title checkout__main-delivery__title">Доставка</h2>
+              <div class="checkout__main-delivery__block">
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="newPost">
+                    <label for="newPost">Нова Пошта</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="newPost__addressDelivery">
+                        <label for="newPost__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="newPost__toDepartment">
+                        <label for="newPost__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="newPost__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="newPost__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="newPost__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="newPost__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="newPost__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="newPost__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="newPost__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="newPost__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="ukrposhta">
+                    <label for="ukrposhta">Укрпошта</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="ukrposhta__addressDelivery">
+                        <label for="ukrposhta__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="ukrposhta__toDepartment">
+                        <label for="ukrposhta__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="ukrposhta__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="ukrposhta__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="ukrposhta__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="ukrposhta__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="ukrposhta__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="ukrposhta__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="ukrposhta__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="ukrposhta__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="justin">
+                    <label for="justin">Justin</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="justin__addressDelivery">
+                        <label for="justin__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="justin__toDepartment">
+                        <label for="justin__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="justin__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="justin__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="justin__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="justin__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="justin__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="justin__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="justin__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="justin__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="sat">
+                    <label for="sat">Sat</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="sat__addressDelivery">
+                        <label for="sat__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="sat__toDepartment">
+                        <label for="sat__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="sat__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="sat__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="sat__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="sat__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="sat__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="sat__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="sat__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="sat__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="delivery">
+                    <label for="delivery">Delivery</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="delivery__addressDelivery">
+                        <label for="delivery__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="delivery__toDepartment">
+                        <label for="delivery__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="delivery__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="delivery__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="delivery__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="delivery__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="delivery__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="delivery__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="delivery__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="delivery__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="mist">
+                    <label for="mist">Mist</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="mist__addressDelivery">
+                        <label for="mist__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="mist__toDepartment">
+                        <label for="mist__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="mist__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="mist__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="mist__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="mist__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="mist__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="mist__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="mist__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="mist__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="pickup">
+                    <label for="pickup">Самовивіз</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <p class="checkout__main-delivery__hidden-address">Адреса:<a href="#">м.Запоріжжя вул.Іванова 1</a></p>
+                  </div>
+                </div>
+                <div class="checkout__main-delivery__item">
+                  <div class="checkout__main-delivery__wrapper">
+                    <input type="radio" id="agroformat">
+                    <label for="agroformat">Доставка від "Агроформат"</label>
+                  </div>
+                  <div class="checkout__main-delivery__hidden">
+                    <div class="checkout__main-delivery__hidden-block">
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="agroformat__addressDelivery">
+                        <label for="agroformat__addressDelivery">Адресна доставка</label>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper">
+                        <input type="radio" id="agroformat__toDepartment">
+                        <label for="agroformat__toDepartment">На відділення</label>
+                      </div>
+                    </div>
+                    <div class="checkout__main-delivery__subwrapper-form">
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="agroformat__addressDelivery-city" placeholder="Місто">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="agroformat__addressDelivery-street" placeholder="Вулиця">
+                        <img src="img/arrow-down-checkout.svg" alt="arrow">
+                        <ul class="checkout__main-delivery__subwrapper-form__list">
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Шевченка</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Перемоги</li>
+                          <li class="checkout__main-delivery__subwrapper-form__list-item">вул. Соборна</li>
+                        </ul>
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="agroformat__addressDelivery-houseNumber" placeholder="Номер будинку">
+                      </div>
+                      <div class="checkout__main-delivery__subwrapper-form__item">
+                        <input type="text" id="agroformat__addressDelivery-index" placeholder="Індекс">
+                      </div>
+                      <textarea id="agroformat__addressDelivery-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                    </div>
+                      <div class="checkout__main-delivery__subwrapper-form">
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="agroformat__toDepartment-city" placeholder="Місто">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Київ</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Львів</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Вінниця</li>
+                          </ul>
+                        </div>
+                        <div class="checkout__main-delivery__subwrapper-form__item">
+                          <input type="text" id="agroformat__toDepartment-number" placeholder="Номер відділення">
+                          <img src="img/arrow-down-checkout.svg" alt="arrow">
+                          <ul class="checkout__main-delivery__subwrapper-form__list">
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №1</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №2</li>
+                            <li class="checkout__main-delivery__subwrapper-form__list-item">Відділення №3</li>
+                          </ul>
+                        </div>
+                        <textarea id="agroformat__toDepartment-comment" cols="30" rows="3" placeholder="Ваш коментар"></textarea>
+                      </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="checkout__main-item checkout__main-payment">
+            <h2 class="checkout__main-title checkout__main-payment__title">Оплата</h2>
+            <div class="checkout__main-payment__block">
+              <div class="checkout__main-payment__wrapper">
+                <input type="radio" id="onDelivery">
+                <label for="onDelivery">Готівкою при отриманні</label>
+              </div>
+              <div class="checkout__main-payment__wrapper checkout__main-payment__wrapper-cashless">
+                <input type="radio" id="cashless">
+                <label for="cashless">Безготівковий розрахунок</label>
+                <div class="checkout__main-payment__hidden">
+                  <div class="checkout__main-payment__hidden-block">
+                    <div class="checkout__main-payment__wrapper">
+                      <input type="radio" id="withVAT">
+                      <label for="withVAT">З ПДВ</label>
+                    </div>
+                    <div class="checkout__main-payment__wrapper">
+                      <input type="radio" id="withoutVAT">
+                      <label for="withoutVAT">БЕЗ ПДВ</label>
+                    </div>
+                  </div>
+                  <div class="checkout__main-payment__hidden-block">
+                    <div class="checkout__main-payment__wrapper">
+                      <input type="radio" id="halfPrepayment">
+                      <label for="halfPrepayment">50% Передплата</label>
+                    </div>
+                    <div class="checkout__main-payment__wrapper">
+                      <input type="radio" id="fullPrepayment">
+                      <label for="fullPrepayment">100% Передплата</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__main-payment__wrapper">
+                <input type="radio" id="byCard">
+                <label for="byCard">Оплата карткою</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout__card">
+          <h2 class="checkout__card-title">Ваше замовлення</h2>
+          <div class="checkout__card-block">
+            <div class="checkout__card-block-item">
+              <div class="checkout__card-block__image"><img src="img/product-card.png" alt="product-image"></div>
+              <div class="checkout__card-block__text">
+                <div class="checkout__card-block__text-left">
+                  <h3 class="checkout__card-block__title">Культиватор 3-х рядний навісний суцільний</h3>
+                  <p class="checkout__card-block__subtitle">артикул</p>
+                </div>
+                <span class="checkout__card-block__price">1 400 000 грн</span>
+              </div>
+            </div>
+            <div class="checkout__card-block-item">
+              <div class="checkout__card-block__image"><img src="img/product-card.png" alt="product-image"></div>
+              <div class="checkout__card-block__text">
+                <div class="checkout__card-block__text-left">
+                  <h3 class="checkout__card-block__title">Культиватор 3-х рядний навісний суцільний</h3>
+                  <p class="checkout__card-block__subtitle">артикул</p>
+                </div>
+                <span class="checkout__card-block__price">1 400 000 грн</span>
+              </div>
+            </div>
+            <div class="checkout__card-block-item">
+              <div class="checkout__card-block__image"><img src="img/product-card.png" alt="product-image"></div>
+              <div class="checkout__card-block__text">
+                <div class="checkout__card-block__text-left">
+                  <h3 class="checkout__card-block__title">Культиватор 3-х рядний навісний суцільний</h3>
+                  <p class="checkout__card-block__subtitle">артикул</p>
+                </div>
+                <span class="checkout__card-block__price">1 400 000 грн</span>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__card-price">
+            <div class="checkout__card-price__delivery">
+              <span>доставка:</span>
+              <strong>1000 грн</strong>
+            </div>
+            <div class="checkout__card-price__withVAT">
+              <span>сума з ПДВ:</span>
+              <strong>5 000 200 грн</strong>
+            </div>
+            <div class="checkout__card-price__withoutVAT">
+              <span>сума БЕЗ ПДВ:</span>
+              <strong>5 000 200 грн</strong>
+            </div>
+            <div class="checkout__card-price__total">
+              <span>до сплати:</span>
+              <strong>5 000 200 грн</strong>
+            </div>
+            <div class="checkout__card-price__totalHalf">
+              <span>до сплати 50%:</span>
+              <strong>2 500 000 грн</strong>
+            </div>
+            <div class="checkout__card-price__totalFull">
+              <span>до сплати 100%:</span>
+              <strong>5 000 000 грн</strong>
+            </div>
+          </div>
+          <button class="checkout__card-price__button">Підтвердити замовлення<img src="img/arrow-left.svg" alt="arrow"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
